@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --bg-color: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #d4d4d4;
+
+  /* Brand Colors */
+  --primary-glow: #00f3ff;
+  /* Cyan/Teal */
+  --secondary-glow: #ff8c00;
+  /* Amber/Orange */
+  --accent-color: #ff6b00;
+
+  /* Gradients */
+  --gradient-cta: linear-gradient(135deg, #ff6b00 0%, #ff8c00 50%, #ffcc00 100%);
+  --gradient-glass: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00) 100%);
+
+  /* Glass */
+  --glass-bg: rgba(10, 10, 10, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+
+  /* Fonts */
+  --font-main: 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Noto Sans Display', sans-serif;
+  /* Fallback to Noto Sans if not available */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.5s ease;
+  --transition-slow: 1s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  margin: 0;
+  overflow: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(0, 243, 255, 0.05) 0%, #000000 70%);
+}
