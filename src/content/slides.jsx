@@ -625,6 +625,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">AI Destekli İdeal Müşteri Taraması (AI-Powered ICP Mining)</h4>
                             <p className="text-white/70">Apollo.io ve LinkedIn entegrasyonu ile ideal müşteri profilimize (<InfoBox content="ICP; Ürününüzden en yüksek verimi alacak ve satın alma ihtimali en yüksek ideal müşteri tanımıdır.">ICP</InfoBox>) uyan binlerce şirketi saniyeler içinde tespit eden otonom tarama.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Fuar ve tanıdık beklemeden, global pazarda 7/24 "aktif avcılık" dönemi.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Veri Kirliliği Riski. Yanlış hedeflere gitmemek için haftalık manuel &quot;Likit Lead&quot; denetimi ve AI skorlama kriterlerinin güncellenmesi gerekir.</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -635,6 +636,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Otonom Veri Zenginleştirme (Autonomous Data Enrichment)</h4>
                             <p className="text-white/70">Bir lead sisteme girdiği an; AI'ın web sitesini, haberlerini ve finansal raporlarını tarayıp CRM'e "Kritik Satış Notları" olarak işlemesi.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Satış temsilcisinin hazırlık süresini sıfıra indiren, müşteriyi kapıda tanıyan "akıllı" karşılama.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Halüsinasyon Riski. AI&apos;ın uydurma veri üretmemesi için &quot;RAG&quot; (Retrieval-Augmented Generation) altyapısı ve veri kaynağı doğrulama protokolü zorunludur.</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -645,6 +647,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Kesintisiz BDR Ajanları (Always-On BDR Agents) (<InfoBox content="Kesintisiz Outreach (Always-On Outreach), potansiyel müşterilere 7/24 otomatik ve kişiselleştirilmiş ilk teması kuran stratejidir. Manuel BDR kapasitesinin (haftalık 50–100 mesaj) yerine, AI Agent'ların e-posta ve LinkedIn üzerinden binlerce hedeflenmiş teması yönetmesiyle 'aktif avcılık' dönemini sürekli kılar.">Kesintisiz Outreach</InfoBox>)</h4>
                             <p className="text-white/70">Uyku uyumayan, yorulmayan ve 10 dilde iletişim kurabilen AI Agent'ların e-posta ve LinkedIn üzerinden kişiselleştirilmiş ilk temasları kurması. AI ilk teması kurar, ancak sıcak lead (MQL) oluştuğu anda sistem bayrağı insana devreder.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Haftalık 50 manuel mesaj yerine, haftalık 5.000 otonom ve hedeflenmiş temas.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Spam Algoritması &amp; Marka İtibarı. Domain sağlığının korunması için &quot;Warm-up&quot; süreçleri ve mesajlarda %100 AI yerine &quot;Human-in-the-loop&quot; (insan onaylı) şablon kontrolü uygulanmalıdır.</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -655,6 +658,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Anlık Niyet Yönlendirmesi (Instant Intent Routing)</h4>
                             <p className="text-white/70">Gelen talebin büyüklüğünü (Enterprise vs. SaaS) ve aciliyetini analiz edip; büyük balığı doğrudan kıdemli temsilciye, küçük balığı ise Sayfa 9'daki "Self-Service" akışına yönlendiren trafik yönetimi.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Kaynakların verimli kullanımı; yüksek hacimli pazarda otonom, yüksek bütçeli pazarda butik yönetim.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Yanlış Sınıflandırma. Potansiyeli yüksek ama kurumsal maili olmayan lead&apos;lerin kaybını önlemek için &quot;Edge Case&quot; (istisna) havuzu oluşturulmalıdır.</p>
                         </div>
                     </div>
                 </div>
@@ -683,6 +687,7 @@ export const slides = [
                                 <li><strong>Continuous QA:</strong> Yayına giren her yeni kodun ardından kritik akışları (Login, Satın Alma, Dashboard) otomatik test eder; hata varsa yayını durdurur.</li>
                             </ul>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Müşteriye "Sizin için sistemi kurduk, işte kanıtı" diyen 7/24 hazır bir teknik satış mühendisi.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Sonsuz Döngü &amp; API Maliyeti. Agent&apos;ın arayüzde takılıp kalmaması ve bütçeyi tüketmemesi için insan kontrolü şart</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -693,6 +698,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Canlı Referans (Strategic <InfoBox content="Dogfooding (kendi ürününü kullanma), bir şirketin kendi geliştirdiği ürünü veya hizmeti günlük operasyonlarında kullanmasıdır. Müşteriye 'Biz de bunu kullanıyoruz, güvenin' mesajı verir; en güçlü satış argümanı ürünün kendi başarısıdır. Canlı referans ve güven inşası sağlar.">Dogfooding</InfoBox>)</h4>
                             <p className="text-white/70">Kendi web sitemizde ve satış hunimizde TFT'nin kendi Agent'larını konumlandırmak ve kendi hatalarımızı AI ile denetleyerek teknik borç (technical debt) birikimini önlemek.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> "Bize güvenin çünkü biz bu sistemi kullanarak büyüyoruz" mesajı. En güçlü satış argümanı, ürünün kendi başarısıdır.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Kritik Hata Görünürlüğü. Kendi sitemizdeki bir AI hatası, ürünün kalitesiz olduğu algısını yaratabilir.</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -703,6 +709,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Uyarlamalı Destek Filtreleme (Adaptive Support Filtering)</h4>
                             <p className="text-white/70">Gelen talepleri (ticket/mesaj) anında analiz eden, <InfoBox content="Mixpanel ve Amplitude, temel olarak Ürün Analitiği (Product Analytics) kategorisinde yer alan, web siteleri ve mobil uygulamalardaki kullanıcı davranışlarını detaylı bir şekilde takip etmenizi sağlayan güçlü araçlardır. Google Analytics gibi geleneksel araçlar daha çok sayfa görüntüleme veya trafik kaynağı üzerine odaklanırken; Mixpanel ve Amplitude, kullanıcının uygulama içinde ne yaptığına (buton tıklama, sepete ürün ekleme, kayıt olma gibi event/olay temelli verilere) odaklanır.">Mixpanel/Amplitude</InfoBox> verisiyle birleştiren ve basit işleri saniyeler içinde çözen "İlk Seviye" AI asistanı.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Destek ekibinin vaktini %60 oranında boşaltarak, sadece "Büyük Balık" (Enterprise) ilişkilerine odaklanmalarını sağlamak.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Müşteri Öfkesi (The Loop of Death). Müşterinin AI ile çözemediği sorunda bir insana ulaşamaması churn sebebidir.</p>
                         </div>
                     </div>
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -713,6 +720,7 @@ export const slides = [
                             <h4 className="text-base font-bold text-white mb-2">Anlık Bilgi Sentezi (Instant Knowledge Synthesis)</h4>
                             <p className="text-white/70">Yazılım güncellendikçe, AI'ın kod bloklarını ve UI değişikliklerini tarayarak yardım dökümanlarını otonom olarak güncellemesi.</p>
                             <p className="text-white/60 mt-2 text-xs"><strong>Stratejik Etki:</strong> Her zaman güncel, asla eskimeyen ve insan eli değmeden büyüyen bir bilgi kütüphanesi.</p>
+                            <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk &amp; Önlem:</strong> Bilgi Güvenliği. AI&apos;ın gizli kalması gereken kod bloklarını veya API anahtarlarını dökümantasyona sızdırmaması için insan faktörü şarttır.</p>
                         </div>
                     </div>
                 </div>
@@ -764,6 +772,7 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Otomasyonlarda kurulan Apollo/LinkedIn entegrasyonuyla, belirlenen ICP'lere (İdeal Müşteri Profili) 7/24 kişiselleştirilmiş soğuk ulaşım başlatılması.
                                     <br /><strong>KPI:</strong> Aylık 10.000+ <InfoBox content="Hedeflenmiş temas (Outreach Volume), BDR ve pazarlama ekiplerinin belirli bir dönemde potansiyel müşterilere (lead) ulaşmak için yaptığı toplam iletişim sayısıdır. E-posta, LinkedIn mesajı, arama vb. tek tek sayılır. Yüksek hacim, otomasyonla mümkündür.">hedeflenmiş temas</InfoBox>; "sıfır" manuel operasyon.
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk:</strong> Alan adı (domain) sağlığının bozulması ve spam filtrelerine takılma.</p>
                                 </>
                             ),
                             icon: <Mail />,
@@ -776,6 +785,7 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Web sitemize girip lead bilgilerini veren her ziyaretçiyi, Hazırlık - AI kısmındaki Puppeteer destekli AI Satış Ajanı karşılar. Ziyaretçiye kendi sektörüne özel canlı demoyu anında izletir.
                                     <br /><strong>KPI:</strong> Gelen lead'lerin "deneyimleyerek" ikna olma oranında (conversion) %300 artış.
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk:</strong> AI&apos;ın yanlış veya &quot;halüsinasyon&quot; içeren teknik bilgi vermesi.</p>
                                 </>
                             ),
                             icon: <Cpu />,
@@ -836,6 +846,7 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Her 30 dakikada bir, AI Agent'ın (Puppeteer kullanarak) canlıymış gibi sunduğu interaktif webinarlar. Ziyaretçinin sorularını AI'nın anlık cevapladığı bir "Always-on" sunum serisi.
                                     <br /><strong>KPI:</strong> Webinar başına toplanan sıcak lead (<InfoBox content="MQL (Marketing Qualified Lead - Pazarlama Nitelikli Lead), pazarlama ekipleri tarafından satış ekibine aktarılmaya değer görülen, satın alma niyeti ve kriterlere uygunluğu yüksek potansiyel müşteridir. Demoyu izleyen, form dolduran, webinar katılan kişi tipik bir MQL'dir.">MQL</InfoBox>) sayısı.
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>⚠️ Risk:</strong> Teknik kesintiler veya AI&apos;ın karmaşık izleyici sorularına yanıt verememesi.</p>
                                 </>
                             ),
                             icon: <Monitor />,
@@ -866,6 +877,8 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Tracking altyapısından gelen verilerle, müşterinin hangi adımda vazgeçtiği saptanır. AI, bu "kopma noktaları" için yeni A/B test senaryoları önerir.
                                     <br /><strong>Sonuç:</strong> Reklam bütçesinin verimliliğini artıran kârlı pazarlama (Optimal CAC).
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>🚩 Risk:</strong> Müşterinin sadece tek modülde çakılı kalması ve diğer modüllere geçiş (cross-sell) motivasyonunun oluşmaması.</p>
+                                    <p className="text-emerald-400/90 mt-1 text-xs"><strong>🛡️ Önlem:</strong> Ürün içinde diğer modüllerin değerini gösteren &quot;kilitli özellik&quot; gösterimleri ve kullanım verisine dayalı otomatik teklifler.</p>
                                 </>
                             ),
                             icon: <BarChart3 />,
@@ -878,6 +891,8 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Ürünü deneyip satın almayan veya sepeti terk eden kullanıcılar AI tarafından analiz edilir. Puppeteer üzerinden bu kişilere "Neden bıraktınız?" anketi veya özel bir teklif otonom olarak iletilir.
                                     <br /><strong>Sonuç:</strong> Kaybedilen potansiyelin geri kazanılması ve churn nedenlerinin AR-GE listesine veri olarak girmesi.
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>🚩 Risk:</strong> Düşük kullanım dönemlerinde nakit akışının (MRR) tahmin edilemez hale gelmesi ve finansal belirsizlik.</p>
+                                    <p className="text-emerald-400/90 mt-1 text-xs"><strong>🛡️ Önlem:</strong> Minimum abonelik bedeli (Platform Fee) + kullanım bazlı ek ücretlendirme hibrit modelinin uygulanması.</p>
                                 </>
                             ),
                             icon: <Mail />,
@@ -890,6 +905,8 @@ export const slides = [
                                 <>
                                     <strong>Eylem:</strong> Lansman sonrası en çok kullanılan modüller saptanır. AR-GE bütçesi, müşterinin "gerçekten" para ödediği özelliklere (Örn: CRM.TFT içindeki otomasyonlar) kaydırılır.
                                     <br /><strong>Sonuç:</strong> Boşa giden yazılım maliyetinin sıfırlanması ve Ürün-Pazar Uyumu (<InfoBox content="Ürün Pazar Uyumu (Product-Market Fit - PMF), bir girişimin ürettiği ürün veya hizmetin, hedef pazarın gerçek bir ihtiyacını karşıladığı ve pazar tarafından yoğun talep gördüğü, sürdürülebilir büyümenin başladığı noktadır. Kullanıcıların ürünü vazgeçilmez bulduğu, organik tavsiyelerin arttığı ve müşteri kaybının düştüğü, başarının temel göstergesi olan kritik bir aşamadır.">PMF</InfoBox>).
+                                    <p className="text-amber-400/90 mt-3 pt-3 border-t border-white/10 text-xs"><strong>🚩 Risk:</strong> Agresif geri dönüş mesajlarının marka imajını &quot;çaresiz/ısrarcı&quot; olarak zedelemesi.</p>
+                                    <p className="text-emerald-400/90 mt-1 text-xs"><strong>🛡️ Önlem:</strong> İletişimi &quot;satış&quot; odaklı değil, &quot;sorun çözme ve ürün geliştirme&quot; odaklı (feedback loops) kurgulamak.</p>
                                 </>
                             ),
                             icon: <Cpu />,
