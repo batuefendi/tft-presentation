@@ -399,7 +399,7 @@ export const slides = [
                                 <Database size={20} />
                             </div>
                             <div className="flex-1 text-sm leading-relaxed text-gray-300">
-                                <h4 className="text-base font-bold text-white mb-2">Mükemmel Dökümantasyon ve SDK Desteği.</h4>
+                                <h4 className="text-base font-bold text-white mb-2">Mükemmel Dökümantasyon.</h4>
                                 <p className="text-white/70">Bir CTO, TFT'yi satın almadan önce dökümantasyona bakar. Eğer dökümantasyon (yardım sayfaları, API rehberleri) kusursuzsa, şirket "geliştirici dostu ve profesyonel" olarak etiketlenir. Bu, ürünün iç kalitesinin en büyük dış göstergesidir.</p>
                             </div>
                         </div>
@@ -438,7 +438,7 @@ export const slides = [
                             <div className="flex-1 text-sm leading-relaxed text-gray-300">
                                 <h4 className="text-base font-bold text-white mb-2">Erken Uyarı Sistemi (Churn Sentinel)</h4>
                                 <p className="text-white/70"><InfoBox content="Churn (müşteri kaybı oranı), bir işletmenin belirli bir süre içinde (aylık, yıllık vb.) kaybettiği müşterilerin veya abonelerin, dönem başındaki toplam müşteri sayısına oranıdır. Özellikle abonelik tabanlı (SaaS), telekomünikasyon ve e-ticaret sektörlerinde, müşteri sadakatini ve işletme büyümesini ölçen kritik bir metriktir.">Churn</InfoBox>
-                            {' '}’ü sebepleri netleşir. Kullanım sıklığı düşen müşteriyi AI tespit eder ve otomatik "Retention" (Geri Kazanım) senaryosunu başlatır.</p>
+                            {' '}’ü sebepleri netleşir. Kullanım sıklığı düşen müşteriyi AI tespit eder, müşteri ile ilgilenen kişiyi uyarır ve otomatik "Retention" (Geri Kazanım) senaryosunu başlatır.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -509,15 +509,6 @@ export const slides = [
                             <div className="flex-1 text-sm leading-relaxed text-gray-300">
                                 <h4 className="text-base font-bold text-white mb-2">Kesintisiz Self-Servis Portalı (Always-On Self-Service) (satın aldığı ürüne göre değişir)</h4>
                                 <p className="text-white/70"><strong>Sorun Çözümü (Dijital Satış):</strong> Manuel takvim bağımlılığı biter. Müşteri kendi sandbox'ını açar, SDK'sını indirir ve kredi kartıyla saniyeler içinde başlar.</p>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
-                            <div className="w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 shrink-0 mt-1">
-                                <Activity size={20} />
-                            </div>
-                            <div className="flex-1 text-sm leading-relaxed text-gray-300">
-                                <h4 className="text-base font-bold text-white mb-2">Yerel Telemetri Merkezi (Native Telemetry Hub)</h4>
-                                <p className="text-white/70"><strong>Sorun Çözümü (Analiz):</strong> Ürünün içinde yerleşik Mixpanel/Amplitude izleyicileri. Hangi modülün ne kadar değer yarattığı artık bir tahmin değil, dashboard verisidir.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
