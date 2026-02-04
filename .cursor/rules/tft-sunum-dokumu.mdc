@@ -1,0 +1,28 @@
+---
+description: Sunum içeriği değişince TFT Sunum İçerik Haritası güncellenmeli
+globs: src/content/slides.jsx
+alwaysApply: false
+---
+
+# TFT Sunum Dökümü Kuralı
+
+**docs/TFT_Sunum_Icerik_Haritasi.md** dosyası sunumun resmî **içerik dökümü**dür (transcript). Sunumda yapılan tüm içerik değişiklikleri bu dosyaya yansıtılmalıdır.
+
+## Ne Zaman Uygula
+
+- `src/content/slides.jsx` içinde **başlık, metin, kart içeriği, BentoGrid öğeleri, InfoBox metinleri** veya slayt sırası/yapısı değiştirildiğinde.
+- Yeni slayt eklendiğinde veya mevcut slayt kaldırıldığında.
+- Bölüm/section adları veya navigasyon yapısı değiştiğinde.
+
+## Yapılacaklar
+
+1. **slides.jsx** üzerinde içerik değişikliği yaptıktan sonra **docs/TFT_Sunum_Icerik_Haritasi.md** dosyasını aç.
+2. İlgili sayfa(lar)ın bölümünü bul (Sayfa 1: Giriş, Sayfa 2: Prestij, … Sayfa 16: Kapanış).
+3. Değişen başlıkları, kart metinlerini, alt metinleri ve açılır bilgi (InfoBox) referanslarını harita dosyasında aynı şekilde güncelle.
+4. Yeni slayt eklendiyse haritaya yeni bir “Sayfa N: …” bölümü ekle; slayt silindiyse ilgili bölümü kaldır.
+5. Üst kısımdaki **Versiyon**, **Toplam Slayt** ve **Güncelleme** alanlarını gerekiyorsa güncelle.
+6. Navigasyon Yapısı (Timeline) bölümünü slayt/section değişikliklerine göre güncelle.
+
+## Özet
+
+**Sunumda her içerik değişikliği → TFT_Sunum_Icerik_Haritasi.md’de karşılık güncelleme.** Harita dosyası her zaman sunumun güncel dökümü olarak tutulur.

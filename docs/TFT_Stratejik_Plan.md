@@ -12,7 +12,8 @@ Mevcut pazarlama anlayışımız, geleneksel prestij odaklı yöntemlerden (fuar
 
 ### 2. BYO-API (Kendi API’nı Getir) Özgürlüğü
 *   **Esneklik:** CRM kullanıcılarına kendi API’larını sisteme entegre etme imkanı sunularak, TFT’nin "anahtar teslim" ama "kişiselleştirilebilir" yapısı güçlendirilecektir.
-*   **Pazar Konumu:** Bu özellik bizi sadece bir yazılım değil, bir altyapı sağlayıcısı konumuna yükseltecektir.
+*   **Prompt Library:** Promptların merkezi bir kütüphanede tutulması sayesinde, kendi yapay zeka çözümlerimizi ve asistanlarımızı çok daha hızlı geliştirme ve optimize etme yeteneği kazanılacaktır.
+*   **Pazar Konumu:** Ürün analitiği araçlarıyla en çok kullanılan ve en güçlü olduğumuz özellikleri ön plana çıkararak, pazardaki konumumuzu veri odaklı bir yaklaşımla belirleyeceğiz.
 
 ## III. VERİ ODAKLI BÜYÜME: ANALİTİK GÜÇ
 "Ölçemediğimiz hiçbir şeyi geliştiremeyiz."
@@ -33,18 +34,30 @@ Satış stratejimiz, sadece insan gücüne değil, otonom sistemlerin gücüne d
 | **Kişiselleştirme** | Lemlist | Yaratıcı outreach ile yanıt oranlarında %50 artış. |
 | **Kurumsal Katılım** | Outreach.io | Karmaşık satış döngülerinin orkestrasyonu ve uzun vadeli anlaşmalar. |
 
+### 1. Ajanlı Pazarlama ve Otonom Talep Oluşturma
+Pazarlamanın yeni dönemi, görevlerin otomatize edilmesinden ziyade, stratejik kararların verilerle desteklendiği bir yapıya dayanmaktadır. AI ajanları; potansiyel müşterileri profillemekte, soruları yanıtlamakta ve satış temsilcileri için randevu planlamakta insanlardan çok daha hızlı ve hatasız hareket etmektedir. TFT'nin web sitesi, bu ajanların 7/24 çalıştığı, ziyaretçilerin niyetlerini (intent) saniyeler içinde analiz ettiği ve onlara en uygun içerik veya teklifi sunduğu bir etkileşim merkezi haline getirilmelidir. Bu sistemin başarısı, ajanların TFT'nin kurumsal hafızasına, vaka çalışmalarına ve teknik dokümanlarına derinlemesine erişebilmesine bağlıdır.
+
+
 ## V. DİJİTAL PAZARLAMA VE SAAS MODELİ
 
 ### 1. Parça Ürün Mantığı (Modular Growth)
 *   Büyük kurumların önünü açmak için, tek başına satılabilir küçük CRM modülleriyle "küçük müşteriler" edinilecektir.
 *   Bu strateji, pazar güvenilirliğini artırırken şirkete düzenli aylık abone geliri (MRR) sağlayacaktır.
 
-### 2. Kurumsal Güven Odaklı Lead Gen
-*   Hızlı/gerilla yöntemler yerine; teknik dökümanlar, vaka analizleri (Case Studies) ve profesyonel sunumlarla güven odaklı bir dijital strateji izlenecektir.
-*   **Gizli Landing Page'ler:** Ana site haritasında olmayan, reklama özel ve doğrudan satış odaklı online sayfalar üzerinden trafik yönetilecektir.
+### 2. Kişiselleştirilmiş Re-Arz ve Lead Yönetimi
+*   **Segmentasyon:** Dijital kanallardan gelen leadlerin iletişim verilerine ve sektörel ihtiyaçlarına göre özelleştirilmiş sunumlar ve mikro-kampanyalar hazırlanacaktır.
+*   **Retargeting & Recovery:** Satışa dönüşmemiş leadlerin "neden" elendiği analiz edilerek (eksik modül, fiyatlandırma, entegrasyon bariyeri vb.), bu eksiklikler giderildiğinde lead'e özel iyileştirilmiş tekliflerle "tekrar arz" (re-submit) süreci işletilecektir.
+*   **Hibrit Strateji:** Kurumsal güven için teknik dökümanlar ve vaka analizleri (Case Studies) ana odağımız kalırken; alt ürünler (Agent, Task vb.) için bağımsız dijital pazarlama kanalları açılacaktır. 
+*   **Gerilla Pazarlama:** Bu kanallarda rakiplerden daha çevik ve avantajlı "parça ürün" teklifleri sunularak pazara hızlı giriş yapılacaktır. Ana amaç tüm ekosistemi satmak olduğu için, müşteriye diğer parçalarla tam bir sistemin yaratacağı verim artışı sürekli olarak tanıtılacaktır.
+*   **Gizli Landing Page'ler & Reddit Yaklaşımı:** Reddit, B2B pazarlamacıları için keşfedilmemiş bir cevherdir. Ancak bu platformda başarı, reklam vermekle değil, topluluğa gerçek değer sunmakla mümkündür. TFT'nin uzmanları, ilgili subreddit'lerde (SaaS, AI, FinTech) teknik problemlere samimi çözümler sunarak güven inşa edecektir. Bu stratejide, Reddit'in anti-reklam kültürünü bozmamak için "gizli iniş sayfaları" (hidden landing pages) kullanılacaktır. Bu sayfalar, genel ana sayfa mesajı yerine, Reddit'teki spesifik tartışmanın bağlamına göre optimize edilmiş içerikler sunar.
+
+### 3. "Yerleş ve Genişle" (Land and Expand) Stratejisi
+Büyük kurumsal anlaşmaların 3-6 aylık uzun satış döngülerini ve 10'dan fazla paydaşın katılımını gerektirdiği göz önüne alındığında, TFT "Yerleş ve Genişle" modelini benimsemelidir. Bu strateji, başlangıçta düşük riskli, küçük bir satışla (örneğin tek bir departmanın ihtiyacını çözen bir modül) kurum içine girmeyi ("Land") ve ardından hızlıca ROI kanıtlayarak diğer departmanlara yayılmayı ("Expand") hedefler. Tüketim tabanlı fiyatlandırma (consumption pricing), bu doğal genişlemeyi kolaylaştırır çünkü müşteri kullandıkça öder ve her büyüme adımı yeni bir satış süreci gerektirmez.
 
 ## VI. 6 AYLIK AKSİYON PLANI (PARALEL SÜREÇLER)
 Bu süreçler ay ay beklemek yerine, eşzamanlı bir operasyonla yürütülecektir:
+
+*   ✅ **Ürün Segmentasyonu:** Ürünün hangi alt ürünlere bölüneceğinin (Micro-SaaS logic) planlanması ve pazarlama potansiyellerinin fizibilite çalışması.
 
 *   ✅ **Ürün Standartizasyonu:** Kritik UI hatalarının giderilmesi ve TFT UI Library’nin ilk versiyonunun tamamlanması.
 *   ✅ **API Altyapısı:** Kullanıcıların kendi API'larını bağlayabileceği gateway modülünün yayına alınması.
@@ -52,9 +65,22 @@ Bu süreçler ay ay beklemek yerine, eşzamanlı bir operasyonla yürütülecekt
 *   ✅ **Dogfooding:** Kendi AI Satış Agent'ımızın web sitesinde lead toplamak üzere aktif edilmesi.
 *   ✅ **Pazar Otomasyonu:** Apollo.io ve Lemlist üzerinden ilk soğuk e-posta (outreach) kampanyalarının çıkılması.
 *   ✅ **SaaS Dönüşümü:** CRM üzerinde modüler satış ve online ödeme altyapısının (Stripe vb.) kurulması.
-*   ✅ **Lead Yönetimi:** Gelen lead'lerin CRM üzerinden skorlanarak satış ekibine (Ela ve ekibi) aktarılması.
+*   ✅ **Pazar araştırması ve İdeal Müşteri Profili (ICP) validasyonu.**
+*   ✅ **Mesaj hiyerarşisinin dokümante edilmesi.**
+*   ✅ **CRM kurulumu ve yaşam döngüsü aşamalarının tanımlanması.**
+*   ✅ **AI BDR platformlarının entegrasyonu ve ilk 5.000 kişilik outreach kampanyası.**
+*   ✅ **Web sitesinde 7/24 çalışan AI ajanlarının aktivasyonu.**
+*   ✅ **LinkedIn ABM reklamlarının başlatılması.**
+*   ✅ **ROI, CAC ve MRR artış raporlaması.**
 
 ## VII. SONUÇ VE RİSK YÖNETİMİ
-Bu planın en büyük riski, teknik hazırlık bitmeden yapılacak pazarlama faaliyetleridir. Ürünün UI ve analitik altyapısı "kusursuz" hale getirilmeden yapılacak bir Expo katılımı, marka imajına zarar verebilir.
+
+### 1. Operasyonel Riskler
+*   **Teknik Olgunluk:** Altyapı (UI/Analitik) tam hazır olmadan yapılacak agresif pazarlama, "yetersiz ürün" algısı yaratarak marka imajına zarar verebilir.
+*   **Entegrasyon Bariyeri:** BYO-API modelinde kullanıcıların yaşayacağı teknik zorluklar, müşteri memnuniyetini düşürebilir. Bu yüzden dokümantasyonun "kusursuz" olması şarttır.
+
+### 2. Pazar ve Rekabet Riskleri
+*   **Alt Ürün Karmaşası:** Ürünün parçalara bölünmesi, marka kimliğinde parçalanma yaratabilir. Tüm alt kanalların "TFT Ekosistemi"ne bağlı olduğu vurgusu (Universal Login/Dashboard) korunmalıdır.
+*   **Rekabetin Yanıtı:** Gerilla taktiklerimize rakiplerin fiyat kırarak yanıt vermesi durumunda, "fiyat" değil "entegre verimlilik" (Efficiency) argümanı ön planda tutulmalıdır.
 
 **Hedef:** TFT'yi sadece bir yazılım şirketi değil, müşterinin tüm ihtiyaçlarına cevap veren, veriye dayalı kararlar alan ve kendi teknolojisiyle satış yapan bir teknoloji devine dönüştürmektir.
