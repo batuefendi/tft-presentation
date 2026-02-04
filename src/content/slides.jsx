@@ -23,49 +23,61 @@ import InfoBox from '../components/InfoBox';
 // Section definitions for the stepper navigation
 export const sections = [
     {
+        id: 'giris',
+        title: 'GİRİŞ',
+        color: 'var(--secondary-glow)', // Sayfadaki mavi (cyan)
+        slideRange: [0, 0] // Slide 0: Giriş sayfası
+    },
+    {
         id: 'neden',
         title: 'NEDEN DEĞİŞMELİYİZ',
-        color: '#ef4444', // Kırmızı (alt step başlık ve altbaşlıklar)
-        slideRange: [0, 4] // Slides 0-4
+        color: '#ef4444',
+        slideRange: [1, 5], // Slide 1: intro, 2-5: Prestij, Analiz, Fiyat, Pazar
+        description: 'Mevcut durumun analizi ve değişim gerekliliği.'
     },
     {
         id: 'vizyon',
         title: 'VİZYON',
-        color: '#8b5cf6', // Violet/Purple
-        slideRange: [5, 7] // Slides 5-7
+        color: '#8b5cf6',
+        slideRange: [6, 9], // Slide 6: intro, 7-9: İtibar, Veri Karar, Ekosistem
+        description: 'TFT\'nin dijital dönüşüm hedefi ve kurumsal standartları.'
     },
     {
         id: 'hazirlik',
         title: 'HAZIRLIK',
         color: 'var(--secondary-glow)',
-        slideRange: [8, 10] // Slides 8-10
+        slideRange: [10, 13], // Slide 10: intro, 11-13: Altyapı, Lansman, BDR
+        description: 'Teknik ve operasyonel hazırlık adımları.'
     },
     {
         id: 'tutundurma',
         title: 'TUTUNDURMA',
         color: '#22c55e',
-        slideRange: [11, 13] // Slides 11-13
+        slideRange: [14, 17], // Slide 14: intro, 15-17: Geri bildirim, Ölçüm, Sürdürülebilirlik
+        description: 'Pazar konumlandırma, müşteri başarısı ve büyüme stratejileri.'
     },
     {
         id: 'isleyis',
         title: 'İŞLEYİŞ & KONTROL',
         color: '#f59e0b',
-        slideRange: [14, 15] // Slide 14: Sürdürülebilirlik, Slide 15: Maliyetler & Riskler
+        slideRange: [18, 20], // Slide 18: intro, 19-20: Sürdürülebilirlik, Maliyetler & Riskler
+        description: 'Sürdürülebilirlik, maliyet ve risk yönetimi.'
     },
     {
         id: 'kapanis',
         title: 'KAPANIŞ',
         color: '#f59e0b',
-        slideRange: [16, 16] // Slide 16: Karar
+        slideRange: [21, 22], // Slide 21: intro, 22: Karar
+        description: 'Kurumsal dönüşüm ve yönetim disiplini.'
     }
 ];
 
 export const slides = [
     // ========================================
-    // BÖLÜM 1: NEDEN DEĞİŞMELİYİZ (Slides 0-5)
+    // GİRİŞ (Slide 0) + NEDEN DEĞİŞMELİYİZ (Slides 1-4)
     // ========================================
     {
-        section: 'neden',
+        section: 'giris',
         supertitle: "Giriş",
         title: "NEDEN YAPIYI DEĞİŞTİRMELİYİZ?",
         layout: "hero",
@@ -88,6 +100,24 @@ export const slides = [
                 <p className="text-base md:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed mt-8">
                     <strong className="text-cyan-400">Çalışan Vizyonu:</strong> TFT&apos;nin böyle bir orta dönem planına sahip olması, sadece satışları artırmak için değil, çalışanların da önünü görmesi ve kurumsal bir rotaya tutunması açısından kritiktir.
                 </p>
+            </div>
+        )
+    },
+    {
+        section: 'neden',
+        supertitle: "",
+        title: "NEDEN DEĞİŞMELİYİZ",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <BarChart3 className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: '#ef4444' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: '#ef4444', textShadow: '0 0 2px #ef4444, 0 0 4px #ef4444' }}>NEDEN DEĞİŞMELİYİZ</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">Mevcut durumun analizi ve değişim gerekliliği.</p>
+                </div>
             </div>
         )
     },
@@ -298,6 +328,24 @@ export const slides = [
     },
     {
         section: 'vizyon',
+        supertitle: "",
+        title: "VİZYON",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <Target className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: '#8b5cf6' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: '#8b5cf6', textShadow: '0 0 2px #8b5cf6, 0 0 4px #8b5cf6' }}>VİZYON</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">TFT&apos;nin dijital dönüşüm hedefi ve kurumsal standartları.</p>
+                </div>
+            </div>
+        )
+    },
+    {
+        section: 'vizyon',
         supertitle: "İtibar",
         title: "KURUMSAL GEÇERLİLİK VE KÜRESEL STANDARTLAR",
         layout: "hero",
@@ -489,6 +537,24 @@ export const slides = [
     },
     {
         section: 'hazirlik',
+        supertitle: "",
+        title: "HAZIRLIK",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <Cpu className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: 'var(--secondary-glow)' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: 'var(--secondary-glow)', textShadow: '0 0 2px var(--secondary-glow), 0 0 4px var(--secondary-glow)' }}>HAZIRLIK</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">Teknik ve operasyonel hazırlık adımları.</p>
+                </div>
+            </div>
+        )
+    },
+    {
+        section: 'hazirlik',
         supertitle: "Altyapı",
         title: "TEKNOLOJİK TEMEL VE ESNEKLİK",
         layout: "hero",
@@ -664,8 +730,26 @@ export const slides = [
     },
 
     // ========================================
-    // BÖLÜM 3: TUTUNDURMA (Slides 6-8)
+    // BÖLÜM 3: TUTUNDURMA
     // ========================================
+    {
+        section: 'tutundurma',
+        supertitle: "",
+        title: "TUTUNDURMA",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <TrendingUp className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: '#22c55e' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: '#22c55e', textShadow: '0 0 2px #22c55e, 0 0 4px #22c55e' }}>TUTUNDURMA</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">Pazar konumlandırma, müşteri başarısı ve büyüme stratejileri.</p>
+                </div>
+            </div>
+        )
+    },
     {
         section: 'tutundurma',
         supertitle: "Lansman",
@@ -1017,8 +1101,26 @@ export const slides = [
     },
 
     // ========================================
-    // BÖLÜM 4: İŞLEYİŞ & KONTROL (Slides 9-10)
+    // BÖLÜM 4: İŞLEYİŞ & KONTROL
     // ========================================
+    {
+        section: 'isleyis',
+        supertitle: "",
+        title: "İŞLEYİŞ & KONTROL",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <Shield className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: '#f59e0b' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: '#f59e0b', textShadow: '0 0 2px #f59e0b, 0 0 4px #f59e0b' }}>İŞLEYİŞ & KONTROL</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">Sürdürülebilirlik, maliyet ve risk yönetimi.</p>
+                </div>
+            </div>
+        )
+    },
     {
         section: 'isleyis',
         supertitle: "Sürdürülebilirlik",
@@ -1170,6 +1272,24 @@ export const slides = [
                         <p className="text-sm text-white/80 leading-relaxed"><strong>Risk:</strong> Her sektöre aynı anda hitap etmeye çalışırken pazarlama bütçesinin (CAC) verimsiz harcanması.</p>
                         <p className="text-sm text-white/80 leading-relaxed mt-2"><strong>Önlem:</strong> İlk 2 çeyrekte sadece 2 dikey sektöre (Hero Segments) odaklanılmalı, başarı kanıtlandıktan sonra yatay büyüme başlatılmalıdır.</p>
                     </div>
+                </div>
+            </div>
+        )
+    },
+    {
+        section: 'kapanis',
+        supertitle: "",
+        title: "KAPANIŞ",
+        layout: "hero",
+        content: (
+            <div className="relative min-h-[60vh] flex flex-col items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden" aria-hidden>
+                    <Activity className="w-[min(55vw,320px)] h-[min(55vw,320px)] opacity-[0.06]" style={{ color: '#f59e0b' }} />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/40 pointer-events-none" aria-hidden />
+                <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ color: '#f59e0b', textShadow: '0 0 2px #f59e0b, 0 0 4px #f59e0b' }}>KAPANIŞ</h2>
+                    <p className="text-lg text-white/80 leading-relaxed">Kurumsal dönüşüm ve yönetim disiplini.</p>
                 </div>
             </div>
         )

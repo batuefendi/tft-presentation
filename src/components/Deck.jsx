@@ -1,12 +1,21 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ChevronLeft, Menu, X } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Menu, X, ChevronDown, Info } from 'lucide-react';
 import { sections } from '../content/slides';
 
 const Deck = ({ slides }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [introPopupDismissed, setIntroPopupDismissed] = useState(false);
     const contentScrollRef = useRef(null);
+
+    const isGirişSlide = currentSlide === 0;
+    const showIntroPopup = isGirişSlide && !introPopupDismissed;
+
+    // Giriş sayfasından çıkınca popup'ı bir sonraki açılışta tekrar göster
+    useEffect(() => {
+        if (!isGirişSlide) setIntroPopupDismissed(false);
+    }, [isGirişSlide]);
 
     // Find which section the current slide belongs to
     const getCurrentSection = useMemo(() => {
@@ -74,6 +83,46 @@ const Deck = ({ slides }) => {
                 <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[var(--primary-glow)] opacity-[0.05] blur-[150px] rounded-full animate-pulse-glow"></div>
                 <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[var(--secondary-glow)] opacity-[0.05] blur-[150px] rounded-full animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
             </div>
+
+            {/* Giriş sayfası bilgilendirme popup'ı */}
+            <AnimatePresence>
+                {showIntroPopup && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+                        onClick={() => setIntroPopupDismissed(true)}
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.95, opacity: 0 }}
+                            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                            className="glass-panel border-[var(--primary-glow)]/30 p-6 max-w-md w-full shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <div className="flex items-start gap-3 mb-4">
+                                <div className="shrink-0 w-10 h-10 rounded-full bg-[var(--primary-glow)]/20 flex items-center justify-center">
+                                    <Info className="w-5 h-5 text-[var(--primary-glow)]" />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-lg font-bold text-white mb-2">Bilgi</h3>
+                                    <p className="text-sm text-white/80 leading-relaxed">
+                                        Sunumda bazı kısaltmalar ve kelimeler <span className="text-[var(--primary-glow)] font-medium">farklı renkte</span> ve yanında <span className="inline-flex align-middle"><ChevronDown size={16} /></span> aşağı doğru ok ile gösterilir. Bu kelimeye tıkladığınızda kelime ile ilgili bilgi açılacaktır.
+                                    </p>
+                                </div>
+                            </div>
+                            <button
+                                onClick={() => setIntroPopupDismissed(true)}
+                                className="w-full py-2.5 rounded-lg bg-[var(--primary-glow)]/20 text-[var(--primary-glow)] font-semibold hover:bg-[var(--primary-glow)]/30 transition-colors"
+                            >
+                                Tamam
+                            </button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             {/* Top Bar (Mobile) */}
             <div className="fixed top-0 left-0 w-full z-50 md:hidden flex items-center justify-between px-4 py-3 bg-black/50 backdrop-blur-lg border-b border-[var(--glass-border)]">
@@ -174,10 +223,11 @@ const Deck = ({ slides }) => {
                                         </span>
                                     </div>
 
-                                    {/* Sub-slides - Only show for active section */}
-                                    {isActiveSection && (
+                                    {/* Sub-slides - Only show for active section (Giriş yok; bölüm intro sayfası listelenmez) */}
+                                    {isActiveSection && section.id !== 'giris' && (
                                         <>
                                             {slides.slice(section.slideRange[0], section.slideRange[1] + 1).map((slide, idx) => {
+                                                if (!slide.supertitle) return null;
                                                 const absoluteIndex = section.slideRange[0] + idx;
                                                 const isActiveSlide = currentSlide === absoluteIndex;
                                                 const isPastSlide = currentSlide > absoluteIndex;
