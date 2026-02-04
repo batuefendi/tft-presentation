@@ -97,7 +97,7 @@ export const slides = [
         title: "PRESTİJ ALGISI YETERSİZ",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--primary-glow)]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--primary-glow)]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Layout size={120} />
                 </div>
@@ -131,7 +131,7 @@ export const slides = [
         title: "VERİ & ANALİZ EKSİKLİĞİ",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--primary-glow)]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--primary-glow)]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <BarChart3 size={120} />
                 </div>
@@ -175,7 +175,7 @@ export const slides = [
         title: "MANUEL SATIŞ & DİJİTAL EKSİKLİK",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--primary-glow)]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--primary-glow)]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Users size={120} />
                 </div>
@@ -250,7 +250,7 @@ export const slides = [
         title: "PAZAR UYUMSUZLUĞU",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--primary-glow)]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--primary-glow)]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <TrendingUp size={120} />
                 </div>
@@ -302,7 +302,7 @@ export const slides = [
         title: "KURUMSAL GEÇERLİLİK VE KÜRESEL STANDARTLAR",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[#8b5cf6]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[#8b5cf6]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Layout size={120} />
                 </div>
@@ -366,7 +366,7 @@ export const slides = [
         title: "ÖLÇÜLEMEYEN KAYIPLARDAN, ÖNGÖRÜLEBİLİR KARLILIĞA",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[#8b5cf6]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[#8b5cf6]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Activity size={120} />
                 </div>
@@ -423,7 +423,7 @@ export const slides = [
         title: "ESNEKLİK VE GERÇEK YATAY BÜYÜME",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[#8b5cf6]/20 relative group">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[#8b5cf6]/20 relative group">
                 <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                     <Zap size={120} />
                 </div>
@@ -493,7 +493,7 @@ export const slides = [
         title: "TEKNOLOJİK TEMEL VE ESNEKLİK",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--secondary-glow)]/20 relative">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--secondary-glow)]/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-[var(--secondary-glow)] mb-24">TEKNOLOJİK TEMEL VE ESNEKLİK</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6">Teknik ve operasyonel altyapı: Savaş alanını hazırlama</p>
                 <div className="space-y-4">
@@ -556,7 +556,7 @@ export const slides = [
         title: "OTONOM SATIŞ ORKESTRASYONU",
         layout: "hero",
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--secondary-glow)]/20 relative">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--secondary-glow)]/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-[var(--secondary-glow)] mb-24">OTONOM SATIŞ ORKESTRASYONU</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6">Teknik ve operasyonel altyapı: Savaş alanını hazırlama</p>
                 <div className="space-y-4">
@@ -610,7 +610,7 @@ export const slides = [
         title: 'AGENTIC WORKFLOWS',
         layout: 'hero',
         content: (
-            <div className="max-w-4xl mx-auto p-12 glass-panel border-[var(--secondary-glow)]/20 relative">
+            <div className="max-w-4xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--secondary-glow)]/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-[var(--secondary-glow)] mb-24">AGENTIC WORKFLOWS</h2>
                 <div className="space-y-4 mt-6">
                     <div className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--primary-glow)]/50 transition-all">
@@ -672,7 +672,7 @@ export const slides = [
         title: "OTONOM BÜYÜME (GROWTH) MOTORU",
         layout: "hero",
         content: (
-            <div className="w-full max-w-7xl mx-auto p-12 glass-panel border-[var(--secondary-glow)]/20 relative">
+            <div className="w-full max-w-7xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--secondary-glow)]/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-[var(--secondary-glow)] mb-24">OTONOM BÜYÜME (GROWTH) MOTORU</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6">Pazar testi ve büyüme: Sahaya iniş</p>
                 <BentoGrid
@@ -896,7 +896,7 @@ export const slides = [
         title: "VERİYLE KANITLANMIŞ BAŞARI (ROI)",
         layout: "hero",
         content: (
-            <div className="w-full max-w-screen-2xl mx-auto p-12 glass-panel border-[var(--secondary-glow)]/20 relative">
+            <div className="w-full max-w-screen-2xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-[var(--secondary-glow)]/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-[var(--secondary-glow)] mb-24">VERİYLE KANITLANMIŞ BAŞARI (ROI)</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6">Ölçülebilir metriklerle büyüme kanıtı</p>
                 <BentoGrid
@@ -1025,7 +1025,7 @@ export const slides = [
         title: "Kendi Kendini İyileştiren Ekosistem",
         layout: "hero",
         content: (
-            <div className="w-full max-w-screen-2xl mx-auto p-12 glass-panel border-amber-500/20 relative">
+            <div className="w-full max-w-screen-2xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-amber-500/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-amber-500 mb-24">Kendi Kendini İyileştiren Ekosistem</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6 text-center">Kurumsal refleks ve sürekli iyileştirme</p>
                 <BentoGrid
@@ -1104,7 +1104,7 @@ export const slides = [
         title: "MALİYETLER & RİSKLER",
         layout: "hero",
         content: (
-            <div className="w-full max-w-screen-2xl mx-auto p-12 glass-panel border-amber-500/20 relative">
+            <div className="w-full max-w-screen-2xl mx-auto p-0 md:p-12 max-md:!bg-transparent max-md:!border-0 max-md:!shadow-none glass-panel border-amber-500/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-amber-500 mb-24">MALİYETLER & RİSKLER</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6 text-center max-w-3xl mx-auto leading-relaxed">Bu maliyetler bir harcama değil; manuel yönetimdeki &apos;verimlilik sızıntılarını&apos; durdurmak için alacağımız bir sigortadır. En pahalı sistem, ölçemediğimiz ve otonomlaştıramadığımız sistemdir.</p>
 
