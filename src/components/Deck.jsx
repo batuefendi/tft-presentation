@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft, Menu, X } from 'lucide-react';
 import { sections } from '../content/slides';
@@ -6,6 +6,7 @@ import { sections } from '../content/slides';
 const Deck = ({ slides }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const contentScrollRef = useRef(null);
 
     // Find which section the current slide belongs to
     const getCurrentSection = useMemo(() => {
@@ -14,20 +15,34 @@ const Deck = ({ slides }) => {
         );
     }, [currentSlide]);
 
+    const scrollToTopMobile = () => {
+        if (typeof window === 'undefined') return;
+        if (!window.matchMedia('(max-width: 767px)').matches) return;
+        if (contentScrollRef.current) {
+            contentScrollRef.current.scrollTop = 0;
+        }
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    };
+
     const goToSlide = (index) => {
         if (index >= 0 && index < slides.length) {
+            scrollToTopMobile();
             setCurrentSlide(index);
         }
     };
 
     const nextSlide = () => {
         if (currentSlide < slides.length - 1) {
+            scrollToTopMobile();
             setCurrentSlide(currentSlide + 1);
         }
     };
 
     const prevSlide = () => {
         if (currentSlide > 0) {
+            scrollToTopMobile();
             setCurrentSlide(currentSlide - 1);
         }
     };
@@ -40,6 +55,15 @@ const Deck = ({ slides }) => {
         };
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [currentSlide]);
+
+    // Mobil: sayfa değişince en üste scroll (contentScrollRef + window; AnimatePresence ~0.8s sonra yeni slayt mount oluyor)
+    useEffect(() => {
+        if (!window.matchMedia('(max-width: 767px)').matches) return;
+        scrollToTopMobile();
+        const t1 = setTimeout(scrollToTopMobile, 100);
+        const t2 = setTimeout(scrollToTopMobile, 950);
+        return () => { clearTimeout(t1); clearTimeout(t2); };
     }, [currentSlide]);
 
     return (
@@ -63,16 +87,20 @@ const Deck = ({ slides }) => {
                 </button>
             </div>
 
-            {/* Main Content Area */}
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={currentSlide}
-                    initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-                    animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                    exit={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex-1 flex flex-col items-center justify-center relative z-10 w-full h-full p-4 md:p-10 pb-28 pt-12 md:pt-0"
-                >
+            {/* Main Content Area - mobilde scroll konteyneri (sayfa değişince en üste gidebilmek için) */}
+            <div
+                ref={contentScrollRef}
+                className="flex-1 min-h-0 w-full overflow-y-auto overflow-x-hidden md:overflow-visible flex flex-col"
+            >
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={currentSlide}
+                        initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
+                        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                        exit={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
+                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                        className="flex-1 flex flex-col items-center justify-center relative z-10 w-full min-h-0 p-4 md:p-10 pb-40 pt-20 md:pb-28 md:pt-0"
+                    >
                     {/* Ana başlık - sol üst */}
                     {getCurrentSection && (
                         <div
@@ -87,8 +115,9 @@ const Deck = ({ slides }) => {
                     ) : (
                         slides[currentSlide].content
                     )}
-                </motion.div>
-            </AnimatePresence>
+                    </motion.div>
+                </AnimatePresence>
+            </div>
 
             {/* Navigation Controls (Side Arrows) */}
             <button

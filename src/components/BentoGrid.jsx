@@ -8,7 +8,7 @@ const BentoGrid = ({ items, stackVertical = false, fullWidth = false, columns = 
             : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2';
     const accent = accentColor || 'var(--primary-glow)';
     return (
-        <div className={`grid gap-4 w-full h-full p-4 ${fullWidth ? '' : 'max-w-5xl mx-auto'} ${gridColsClass}`}>
+        <div className={`grid gap-4 w-full h-full p-0 md:p-4 ${fullWidth ? '' : 'max-w-5xl mx-auto'} ${gridColsClass}`}>
             {items.map((item, index) => (
                 <div
                     key={index}

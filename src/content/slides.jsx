@@ -778,7 +778,7 @@ export const slides = [
         title: "CUSTOMER SUCCESS & RETENTION (ELDE TUTMA)",
         layout: "hero",
         content: (
-            <div className="w-full max-w-screen-2xl mx-auto p-12 glass-panel border-green-500/20 relative">
+            <div className="w-full max-w-screen-2xl mx-auto p-0 md:p-12 glass-panel border-green-500/20 relative">
                 <h2 className="text-center text-4xl md:text-5xl font-black neon-text text-green-400 mb-24">CUSTOMER SUCCESS & RETENTION (ELDE TUTMA)</h2>
                 <p className="text-sm text-white/60 mb-8 mt-6">Pazar girişi ve yatay büyüme stratejileri</p>
                 <BentoGrid
